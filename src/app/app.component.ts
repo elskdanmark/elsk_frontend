@@ -21,6 +21,7 @@ export class AppComponent implements OnInit{
   } 
 
   getUser(): User {
+    //comment
     return this.user;
   }
 

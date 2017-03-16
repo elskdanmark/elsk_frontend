@@ -8,7 +8,7 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class UserService {
   private headers = new Headers({'Content-Type': 'application/json'});
-  private userUrl = 'http://symfo1.dev/app_dev.php/user';  // URL to web api
+  private userUrl = 'http://api.elsk.dev/app_dev.php/user';  // URL to web api
   constructor(private http: Http) { }
 
   getUser(): Promise<User> {
