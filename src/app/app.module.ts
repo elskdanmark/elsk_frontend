@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
+import { WsseService } from './wsse.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { UserService } from './user.service';
     FormsModule,
     HttpModule
   ],
-  providers: [UserService],
+  providers: [UserService, WsseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,18 +11,13 @@ import { User } from './user';
 export class AppComponent implements OnInit{
   title = 'Welcome - Elsk Web portal!';
 
-  public user : User;
+  user : User;
 
   constructor (private userService : UserService){}
 
   ngOnInit(): void {
     this.userService.getUser()
       .then(user => this.user = user);
-  } 
-
-  getUser(): User {
-    //comment
-    return this.user;
   }
 
 }
