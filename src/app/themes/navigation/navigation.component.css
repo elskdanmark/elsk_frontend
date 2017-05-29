@@ -1,0 +1,40 @@
+nav,.navbar, .navbar-default, .navbar-fixed, .container-fluid{
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: 0px;
+    margin-bottom: 0px;
+}
+
+nav .container-fluid{
+    margin-right: 20px;
+}
+
+.navbar-header {
+    background: #23262F;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    width: 20.5%;
+    min-width: 250px;
+    line-height: 16px;
+}
+.navbar-header a {
+    color:#fff;
+}
+.user-pic {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.nav.navbar-nav.navbar-right li {
+        margin-top: 5px;
+}
+.nav.navbar-nav.navbar-right li .username{
+    display: block;
+    margin: 15px 0 10px 10px;
+    font: 18px bold;
+    line-height: 16px;
+}
