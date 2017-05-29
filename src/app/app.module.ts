@@ -6,10 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
 import { WsseService } from './wsse.service';
+import { Tabs, Tab } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Tabs,
+    Tab
   ],
   imports: [
     BrowserModule,
