@@ -2,9 +2,9 @@
     <li>
         <i class="fa fa-users" aria-hidden="true"></i> User <span class="caret"></span>
         <ul class="submenu">
-            <li><a href="#">Recipient</a></li>
-            <li><a href="#">Volunteers</a></li>
-            <li><a href="#">Administrator</a></li>
+            <li><a routerLink="/recipients">Recipient</a></li>
+            <li><a routerLink="/volunteers">Volunteers</a></li>
+            <li><a routerLink="/administrators">Administrator</a></li>
         </ul>
     </li>
 
@@ -12,8 +12,8 @@
         <i class="fa fa-calendar" aria-hidden="true"></i> Schedule <span class="caret"></span>
 
         <ul class="submenu">
-            <li><a href="#">Generate</a></li>
-            <li><a href="#">Existing</a></li>
+            <li><a routerLink="#">Generate</a></li>
+            <li><a routerLink="#">Existing</a></li>
         </ul>
     </li>
 
@@ -21,11 +21,9 @@
         <i class="fa fa-user-plus" aria-hidden="true"></i> Registration <span class="caret"></span>
 
         <ul class="submenu">
-            <li><a href="#">Recipient</a></li>
-            <li><a href="#">Volunteers</a></li>
-            <li><a href="#">Administrator</a></li>
-            <!--<li><a href="#">Help offer</a></li>
-            <li><a href="#">Help request</a></li>-->
+            <li><a routerLink="/register/recipient">Recipient</a></li>
+            <li><a routerLink="/register/volunteer">Volunteers</a></li>
+            <li><a routerLink="/register/adminstrator">Administrator</a></li>
         </ul>
     </li>
 
@@ -33,19 +31,19 @@
         <i class="fa fa-paper-plane" aria-hidden="true"></i> Help Event <span class="caret"></span>
 
         <ul class="submenu">
-            <li><a href="#">New Event</a></li>
-            <li><a href="#">Ongoing Event</a></li>
-            <li><a href="#">Event List</a></li>
+            <li><a routerLink="/helpEvent/create">New Event</a></li>
+            <li><a routerLink="/helpEvent/ongoing">Ongoing Event</a></li>
+            <li><a routerLink="/helpEvent/list">Event List</a></li>
         </ul>
     </li>
 
     <li> 
         <i class="fa fa-envelope-o" aria-hidden="true"></i> Email <span class="caret"></span>
         <ul class="submenu">
-            <li><a href="#">New Group</a></li>
-            <li><a href="#">Group List</a></li>
-            <li><a href="#">Manage group</a></li>
-            <li><a href="#">Send Email</a></li>
+            <li><a routerLink="/emailGroup/create">New Group</a></li>
+            <li><a routerLink="/emailGroup/list">Group List</a></li>
+            <li><a routerLink="/emailGroup/manage">Manage group</a></li>
+            <li><a routerLink="/emailGroup/sendMail">Send Email</a></li>
         </ul>
     </li>
 </ul>
