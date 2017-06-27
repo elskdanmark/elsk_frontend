@@ -6,17 +6,17 @@ ul.tab {
 ul.tab li {
     display: inline;
 }
-ul.tab li a {
+ul.tab li span {
     color: #42454a;
     border-bottom: none;
     line-height: 20px;
     padding: 1em;
     text-decoration: none;
 }
-ul.tab li a:hover { 
+ul.tab li span:hover { 
     background-color: #f1f0ee;
 }
-ul.tab li a.active {
+ul.tab li span.active {
     color: #000;
     background-color: #fff;
     border: 1px solid #c9c3ba;
