@@ -3,6 +3,7 @@
   list-style: none;
   padding: 0 0 0 20px;
   margin: 0;
+  overflow:hidden;
 }
 
 /* make ALL links (main and submenu) have padding and background color */
@@ -10,7 +11,7 @@
   display: block;
   /*background-color: #CCC;*/
   text-decoration: none;
-  padding: 10px;
+  padding: 7px;
 }
 
 

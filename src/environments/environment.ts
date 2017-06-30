@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiUrl: "http://symfo1.dev/app_dev.php/user"
+  API_URL: "http://api.elsk.dev/"
 };
