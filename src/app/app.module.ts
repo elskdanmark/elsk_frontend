@@ -5,16 +5,19 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './themes/sidebar/sidebar.component';
-import { UserService } from './user.service';
-import { WsseService } from './wsse.service';
-import { Tabs, Tab } from './tabs/tabs.component';
-import { MenuComponent} from './themes/menu/menu.component';
-import { SideMenuButtonComponent } from './themes/side-menu-button/side-menu-button.component';
-import { NavigationComponent } from './themes/navigation/navigation.component';
-import { UsersComponent } from './users/users.component';
-import { UserDetailComponent } from './users/user-detail.component';
-import { PageNotFoundComponent } from './page-not-found.component';
+import { SidebarComponent } from './components/themes/sidebar/sidebar.component';
+import { injectables } from './services/injectables';
+import { UserService } from './services/user.service';
+import { WsseService } from './services/wsse.service';
+import { ApiService } from './services/api.service';
+import { Tabs, Tab } from './components/tabs/tabs.component';
+import { MenuComponent} from './components/themes/menu/menu.component';
+import { SideMenuButtonComponent } from './components/themes/side-menu-button/side-menu-button.component';
+import { NavigationComponent } from './components/themes/navigation/navigation.component';
+import { UsersComponent} from './components/users/users.component';
+import { UserDetailComponent } from './components/users/user-detail.component';
+import { UsersListComponent } from './components/users/users-list.components';
+import { PageNotFoundComponent } from './components/page-not-found.component';
 import {AUTH_PROVIDERS} from './services/auth-service' ;
 import {LoggedInGuard} from './guards/loggedIn.guard' ;
 
@@ -61,6 +64,7 @@ const appRoutes: Routes = [
     UsersComponent,
     UserDetailComponent,
     PageNotFoundComponent,
+    UsersListComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +75,8 @@ const appRoutes: Routes = [
   providers: [
     UserService, 
     WsseService,
+    ApiService, 
+    injectables,
     AUTH_PROVIDERS,
     LoggedInGuard,
     ],

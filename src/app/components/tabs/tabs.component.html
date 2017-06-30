@@ -1,6 +1,6 @@
 <ul class="tab">
   <li *ngFor="let tab of tabs" (click)="selectTab(tab)" >
-    <a href="#" [class.active]="tab.active">{{tab.tabTitle}}</a>
+    <span [class.active]="tab.active">{{tab.tabTitle}}</span>
   </li>
 </ul>
 <div class="tabContent">
